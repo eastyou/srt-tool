@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "srt-tool"
+version = "0.1.0"
+description = "SRT 字幕时间轴工具：体检、平移、变速、转 WebVTT"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["srt", "subtitle", "vtt", "cli", "video"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Multimedia :: Video",
+]
+
+[project.scripts]
+srttool = "srttool.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/srt-tool"
+Source = "https://github.com/eastyou/srt-tool"
+
+[tool.setuptools]
+packages = ["srttool"]
